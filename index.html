@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مطعم البلد | مطبخ عربي أصيل بطابع عصري</title>
+  <meta name="description" content="مطعم البلد: مشاوي، مقبلات، وحلويات عربية بوصفات أصيلة وتقديم عصري.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="مطعم البلد - الرئيسية">
+      <span class="brand-mark">ب</span>
+      <span class="brand-name">مطعم البلد</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#menu">المنيو</a>
+      <a href="#about">قصتنا</a>
+      <a href="#gallery">الأجواء</a>
+      <a href="#visit">الموقع والمواعيد</a>
+      <a href="#reserve" class="btn btn-small">احجز طاولة</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">مطبخ عربي أصيل • تقديم عصري</p>
+        <h1>طعم البيت<br><span class="accent">بروح المدينة</span></h1>
+        <p class="lead">مشاوي على الفحم، مقبلات طازجة، وحلويات تحكي حكاية كل حارة. كل طبق مُعدّ بالصبر والمكونات الطازجة.</p>
+        <div class="hero-actions">
+          <a href="#reserve" class="btn btn-primary">احجز طاولتك</a>
+          <a href="#menu" class="btn btn-ghost">شوف المنيو</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-circle">
+          <span class="hero-word">بلد</span>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="انزل لتحت">↓</a>
+    </section>
+
+    <section class="section" id="menu">
+      <header class="section-head">
+        <p class="eyebrow">من مطبخنا</p>
+        <h2>المنيو</h2>
+        <p class="section-sub">أطباقنا الأكثر طلباً، جاهزة لتشاركها مع الأحبة.</p>
+      </header>
+
+      <div class="menu-tabs" role="tablist" aria-label="أقسام المنيو">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="mezze">المقبلات</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="grill">المشاوي</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="sweets">الحلويات</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish" data-group="mezze">
+          <div class="dish-head">
+            <h3>حمص بالطحينة</h3>
+            <span class="price">٢٫٥ د.أ</span>
+          </div>
+          <p>حمص ناعم مع طحينة، زيت زيتون بكر، وحب حمص مقلي.</p>
+        </article>
+        <article class="dish" data-group="mezze">
+          <div class="dish-head">
+            <h3>متبل باذنجان</h3>
+            <span class="price">٣ د.أ</span>
+          </div>
+          <p>باذنجان مشوي على النار بالثوم والرمان ودبس الرمان.</p>
+        </article>
+        <article class="dish" data-group="mezze">
+          <div class="dish-head">
+            <h3>فتوش البلد</h3>
+            <span class="price">٣٫٥ د.أ</span>
+          </div>
+          <p>خضار موسمية طازجة، خبز مقمّر، وسماق وعصير ليمون.</p>
+        </article>
+        <article class="dish" data-group="mezze">
+          <div class="dish-head">
+            <h3>وَرق عنب</h3>
+            <span class="price">٤ د.أ</span>
+          </div>
+          <p>ورق عنب محشي بالأرز والبقدونس، مطبوخ بالليمون والنعنع.</p>
+        </article>
+
+        <article class="dish" data-group="grill" hidden>
+          <div class="dish-head">
+            <h3>مشاوي مشكّلة</h3>
+            <span class="price">١٢ د.أ</span>
+          </div>
+          <p>شيش طاووق، كفتة، وقطع لحم غنم مشوية على الفحم، مع أرز ومقبلات.</p>
+        </article>
+        <article class="dish" data-group="grill" hidden>
+          <div class="dish-head">
+            <h3>شيش طاووق</h3>
+            <span class="price">٧٫٥ د.أ</span>
+          </div>
+          <p>دجاج متبّل بالثوم والزعتر والليمون، مشوي حتى يصير ذهبياً.</p>
+        </article>
+        <article class="dish" data-group="grill" hidden>
+          <div class="dish-head">
+            <h3>كفتة لحم</h3>
+            <span class="price">٨ د.أ</span>
+          </div>
+          <p>كفتة لحم بقري مع البقدونس والبصل، مشوية على الجمر.</p>
+        </article>
+        <article class="dish" data-group="grill" hidden>
+          <div class="dish-head">
+            <h3>مندي دجاج</h3>
+            <span class="price">٩ د.أ</span>
+          </div>
+          <p>دجاج مطهو ببخار الحطب، مع أرز بسمتي معطر بالبهارات.</p>
+        </article>
+
+        <article class="dish" data-group="sweets" hidden>
+          <div class="dish-head">
+            <h3>كنافة نابلسية</h3>
+            <span class="price">٣ د.أ</span>
+          </div>
+          <p>جبنة نابلسية طرية بقطر الورد، مع كنافة مقرمشة.</p>
+        </article>
+        <article class="dish" data-group="sweets" hidden>
+          <div class="dish-head">
+            <h3>بقلاوة بالفستق</h3>
+            <span class="price">٢٫٥ د.أ</span>
+          </div>
+          <p>طبقات رقيقة من العجين المقرمش مع فستق حلبي.</p>
+        </article>
+        <article class="dish" data-group="sweets" hidden>
+          <div class="dish-head">
+            <h3>معمول التمر</h3>
+            <span class="price">٢ د.أ</span>
+          </div>
+          <p>معمول بالسميد والسمن البلدي، محشو بالتمر الطبيعي.</p>
+        </article>
+        <article class="dish" data-group="sweets" hidden>
+          <div class="dish-head">
+            <h3>أم علي</h3>
+            <span class="price">٣ د.أ</span>
+          </div>
+          <p>عجينة مخبوزة بالحليب والقشطة والمكسرات، تُقدّم دافئة.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="eyebrow">قصتنا</p>
+          <h2>وصفات جدتنا، بلمسة اليوم</h2>
+          <p>بدأنا من مطبخ صغير في حي شعبي، وحلمنا إنّ الأكل العربي يكون بعيد عن الزحمة، وقريب من القلب. نحافظ على الوصفات الأصلية، ونقدّمها بطريقة تليق بالضيف.</p>
+          <p>كل يوم نحضّر الخبز والمعجنات بإيدينا، والمشاوي على الفحم الطبيعي، لأن الطعم الحقيقي ما بيتعجل.</p>
+          <ul class="values">
+            <li><strong>مكونات طازجة</strong> كل صباح من السوق</li>
+            <li><strong>وصفات أصيلة</strong> بلا اختصارات</li>
+            <li><strong>ضيافة دافئة</strong> من أول لقمة</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <div class="stat">
+            <span class="stat-num">+١٠</span>
+            <span class="stat-label">سنين من الطبخ</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">٤٠+</span>
+            <span class="stat-label">صنف من مطبخنا</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">١٠٠٪</span>
+            <span class="stat-label">تحضير يومي طازج</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <header class="section-head">
+        <p class="eyebrow">لحظات من عنّا</p>
+        <h2>الأجواء</h2>
+      </header>
+      <div class="gallery">
+        <div class="tile tile-a"><span>الفحم والنار</span></div>
+        <div class="tile tile-b"><span>سفرة العيلة</span></div>
+        <div class="tile tile-c"><span>حلويات الصباح</span></div>
+        <div class="tile tile-d"><span>ليلة السهرة</span></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="visit">
+      <header class="section-head">
+        <p class="eyebrow">زورونا</p>
+        <h2>الموقع والمواعيد</h2>
+      </header>
+      <div class="visit-grid">
+        <div class="info-card">
+          <h3>أوقات الدوام</h3>
+          <ul class="hours">
+            <li><span>السبت - الخميس</span><span>١٠ ص - ١٢ ليلاً</span></li>
+            <li><span>الجمعة</span><span>١٢ ظهراً - ١٢ ليلاً</span></li>
+          </ul>
+          <h3>تواصل معنا</h3>
+          <p><a href="tel:+962000000000" dir="ltr">+962 00 000 0000</a></p>
+          <p>العنوان: <span id="address">شارع الرئيسي، حي البلد، عمّان</span></p>
+        </div>
+        <div class="map-box" role="img" aria-label="خريطة تقريبية للموقع">
+          <span>ضع رابط خريطة جوجل هنا</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reserve">
+      <div class="reserve-wrap">
+        <div class="reserve-intro">
+          <p class="eyebrow">احجز مكانك</p>
+          <h2>احجز طاولتك</h2>
+          <p>عبّي البيانات وبنأكد الحجز عبر الهاتف خلال ساعة.</p>
+        </div>
+
+        <form class="reserve-form" id="reserve-form" novalidate>
+          <div class="field">
+            <label for="name">الاسم</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">رقم الهاتف</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" dir="ltr" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="date">التاريخ</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="time">الوقت</label>
+              <input id="time" name="time" type="time" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="guests">عدد الأشخاص</label>
+            <select id="guests" name="guests">
+              <option>٢</option><option>٣</option><option>٤</option>
+              <option>٥</option><option>٦</option><option>٨+</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">تأكيد الحجز</button>
+          <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark">ب</span>
+      <span>مطعم البلد</span>
+    </div>
+    <p>طعم البيت، بروح المدينة.</p>
+    <p class="copy">© <span id="year"></span> مطعم البلد. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
