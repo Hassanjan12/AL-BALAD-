@@ -19,7 +19,6 @@ durch echte Fotos des Restaurants ersetzt werden.
 | fish.webp | photo-1611599537845-1c7aca0091c0 |
 | shawarma-wrap.webp | photo-1633321702518-7feccafb94d5 |
 | durum.webp | photo-1626700051175-6818013e1d4f |
-| doner.webp | photo-1530469912745-a215c6b256ea |
 | hummus.webp | photo-1637949385162-e416fb15b2ce |
 | falafel.webp | photo-1593001872095-7d5b3868fb1d |
 | salad.webp | photo-1540189549336-e6e99c3679fe |
@@ -28,7 +27,6 @@ durch echte Fotos des Restaurants ersetzt werden.
 | house-plate.webp | photo-1561651823-34feb02250e4 |
 | burger.webp | photo-1594212699903-ec8a3eca50f5 |
 | baklava.webp | photo-1598110750624-207050c4f28c |
-| interior.webp | photo-1590846406792-0adc7f938f1d |
 | interior-bar.webp | photo-1514933651103-005eec06c04b |
 
 Bild-URL: `https://images.unsplash.com/<Foto-ID>`
