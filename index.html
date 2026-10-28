@@ -2,185 +2,460 @@
 <html lang="de" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Grill Al Balad | Holzkohlegrill &amp; arabische Küche</title>
-  <meta name="description" content="Grill Al Balad: Holzkohlegrill, Schawarma, Falafel und arabische Vorspeisen, frisches Tanoor-Brot. Jetzt Tisch reservieren.">
+  <meta name="description" content="Grill Al Balad: Lamm, Hähnchen und Kebab vom Holzkohlegrill, frisches Tanoor-Brot und arabische Mezze. Online auswählen und per WhatsApp bestellen.">
+  <meta name="theme-color" content="#0d0b09">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%230d0b09'/%3E%3Cpath d='M24 9c2 4.8 7.4 8 7.4 15A7.4 7.4 0 0 1 24 31.4 7.4 7.4 0 0 1 16.6 24c0-3.4 1.7-5.7 3.4-7.4.2 2.5 1.4 4.1 3 4.8-.7-4.6.7-8.7 1-12.4Z' fill='%23d4af6a'/%3E%3Cpath d='M15 36h18M18 39.5h12' stroke='%23d4af6a' stroke-width='1.4'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header class="site-header" id="top">
-    <a href="#top" class="brand" data-i18n-attr="aria-label:brand.aria">
-      <span class="brand-mark" data-i18n="brand.mark">G</span>
-      <span class="brand-name">Grill Al Balad</span>
-    </a>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-logo" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width=".6" opacity=".45"/>
+        <path d="M24 10.5c1.9 4.5 6.9 7.5 6.9 14a6.9 6.9 0 0 1-13.8 0c0-3.2 1.6-5.3 3.2-6.9.2 2.3 1.3 3.8 2.8 4.5-.7-4.3.6-8.1.9-11.6Z" fill="currentColor"/>
+        <path d="M15.5 35h17M18.5 38h11" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2.5c1.2 3 4.8 5 4.8 9.6a4.8 4.8 0 0 1-9.6 0c0-2.2 1.1-3.7 2.2-4.8.2 1.6.9 2.6 2 3.1-.5-3 .4-5.6.6-7.9Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 21h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-bread" viewBox="0 0 24 24"><path d="M4 12.5C4 8.4 7.6 5.5 12 5.5s8 2.9 8 7c0 1.4-.8 2-1.8 2.3V18a1.5 1.5 0 0 1-1.5 1.5H7.3A1.5 1.5 0 0 1 5.8 18v-3.2C4.8 14.5 4 13.9 4 12.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 10.5l1.5 1.5M12.5 9.5 14 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2.5a9.42 9.42 0 0 0-8.1 14.24L2.5 21.5l4.9-1.4a9.42 9.42 0 1 0 4.64-17.6Zm0 17.2a7.8 7.8 0 0 1-3.97-1.09l-.28-.17-2.9.83.85-2.83-.19-.29a7.8 7.8 0 1 1 6.49 3.55Zm4.28-5.84c-.23-.12-1.38-.68-1.6-.76-.21-.08-.37-.12-.53.12-.16.23-.6.76-.74.92-.14.16-.27.18-.5.06a6.4 6.4 0 0 1-1.88-1.16 7.05 7.05 0 0 1-1.3-1.62c-.14-.23-.02-.36.1-.47.1-.1.23-.27.35-.41.12-.14.16-.23.23-.39.08-.16.04-.3-.02-.41-.06-.12-.53-1.27-.72-1.74-.19-.46-.38-.4-.53-.4h-.45a.87.87 0 0 0-.63.29 2.64 2.64 0 0 0-.82 1.96 4.58 4.58 0 0 0 .96 2.43 10.5 10.5 0 0 0 4.02 3.55c.56.24 1 .39 1.34.5a3.23 3.23 0 0 0 1.48.09 2.42 2.42 0 0 0 1.59-1.12 1.97 1.97 0 0 0 .14-1.12c-.06-.1-.21-.16-.45-.28Z"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5.5 8h13l-1 11.2a1.5 1.5 0 0 1-1.5 1.3H8a1.5 1.5 0 0 1-1.5-1.3L5.5 8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.3a10.5 10.5 0 0 0 5.6 5.6l1.3-2 4 1.4v2.6a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-.5 9-5.5 14-13 14H5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 19 13 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-wrap" viewBox="0 0 24 24"><path d="M7 20 4.5 8.5a2 2 0 0 1 1.3-2.3L15.5 3a2 2 0 0 1 2.5 1.3L20.5 14 7 20Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 9.5l7-2.3M9.3 13l7-2.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.5 2.5 6.4 7 7-4.5.6-6.4 2.5-7 7-.6-4.5-2.5-6.4-7-7 4.5-.6 6.4-2.5 7-7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M18.5 16.5c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5Z" fill="currentColor"/></symbol>
+      <symbol id="i-chili" viewBox="0 0 24 24"><path d="M15 6c-1 6-4 11-10 13 0 0 3.5 1.5 7.5-.5S18.5 12 18.5 8.5 15 6 15 6Z" fill="currentColor"/><path d="M15 6c0-1.5 1-2.5 2.5-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.7c0-.9.3-1.5 1.5-1.5h1.5V4.6a20 20 0 0 0-2.2-.1c-2.2 0-3.8 1.4-3.8 3.9v2.1H8v3h2.5V21h3Z" fill="currentColor"/></symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M15.5 3h-3v12.3a2.8 2.8 0 1 1-2.8-2.8c.3 0 .6 0 .8.1V9.5a5.8 5.8 0 1 0 5 5.8V9.2a7 7 0 0 0 4 1.3v-3a4 4 0 0 1-4-4.5Z" fill="currentColor"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14M10 7V5h4v2M7 7l.8 12a1.5 1.5 0 0 0 1.5 1.4h5.4a1.5 1.5 0 0 0 1.5-1.4L17 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+      <symbol id="i-ornament" viewBox="0 0 120 12"><path d="M0 6h48M72 6h48" stroke="currentColor" stroke-width=".8"/><path d="M60 1l5 5-5 5-5-5 5-5Z" fill="none" stroke="currentColor" stroke-width=".9"/><circle cx="51" cy="6" r="1.1" fill="currentColor"/><circle cx="69" cy="6" r="1.1" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
 
-    <nav class="nav" id="nav">
-      <a href="#menu" data-i18n="nav.menu">Speisekarte</a>
-      <a href="#about" data-i18n="nav.about">Über uns</a>
-      <a href="#gallery" data-i18n="nav.gallery">Impressionen</a>
-      <a href="#visit" data-i18n="nav.visit">Besuch</a>
-      <a href="#reserve" class="btn btn-primary btn-small" data-i18n="nav.reserve">Reservieren</a>
-    </nav>
+  <a class="skip-link" href="#menu" data-i18n="nav.menu">Speisekarte</a>
 
-    <div class="header-actions">
-      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.label">
-        <button type="button" class="lang-btn" data-lang="de" aria-pressed="true">DE</button>
-        <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">عربي</button>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a href="#top" class="logo" aria-label="Grill Al Balad">
+        <svg class="logo__mark"><use href="#i-logo"/></svg>
+        <span class="logo__text">
+          <span class="logo__name">Grill Al Balad</span>
+          <span class="logo__sub" data-i18n="brand.sub">Holzkohlegrill</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#menu" data-i18n="nav.menu">Speisekarte</a>
+        <a href="#about" data-i18n="nav.about">Über uns</a>
+        <a href="#order" data-i18n="nav.order">Bestellen</a>
+        <a href="#gallery" data-i18n="nav.gallery">Impressionen</a>
+        <a href="#visit" data-i18n="nav.visit">Kontakt</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" role="group" data-i18n-attr="aria-label:lang.label">
+          <button type="button" class="lang__btn" data-lang="de">DE</button>
+          <button type="button" class="lang__btn" data-lang="ar">ع</button>
+        </div>
+        <button type="button" class="icon-btn cart-btn" data-open-cart data-i18n-attr="aria-label:nav.cart">
+          <svg><use href="#i-bag"/></svg>
+          <span class="cart-btn__count" data-cart-count hidden>0</span>
+        </button>
+        <a href="#menu" class="btn btn--gold btn--sm header__cta" data-i18n="nav.cta">Jetzt bestellen</a>
+        <button type="button" class="icon-btn burger" aria-expanded="false" aria-controls="mobile-nav" data-i18n-attr="aria-label:nav.open">
+          <span></span><span></span>
+        </button>
       </div>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
+  <!-- Mobile navigation -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav class="mobile-nav__links">
+      <a href="#menu"><span class="mobile-nav__num">01</span><span data-i18n="nav.menu">Speisekarte</span></a>
+      <a href="#about"><span class="mobile-nav__num">02</span><span data-i18n="nav.about">Über uns</span></a>
+      <a href="#order"><span class="mobile-nav__num">03</span><span data-i18n="nav.order">Bestellen</span></a>
+      <a href="#gallery"><span class="mobile-nav__num">04</span><span data-i18n="nav.gallery">Impressionen</span></a>
+      <a href="#visit"><span class="mobile-nav__num">05</span><span data-i18n="nav.visit">Kontakt</span></a>
+    </nav>
+    <div class="mobile-nav__foot">
+      <span class="deco-word">البلد</span>
+      <a href="#" class="btn btn--whatsapp" data-whatsapp-link>
+        <svg><use href="#i-whatsapp"/></svg><span data-i18n="visit.whatsapp">Auf WhatsApp schreiben</span>
+      </a>
+    </div>
+  </div>
+
   <main>
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Holzkohlegrill • Arabische Küche</p>
-        <h1 data-i18n-html="hero.title">Feuer der Holzkohle<br><span class="accent">Geschmack der Heimat</span></h1>
-        <p class="lead" data-i18n="hero.lead">Lamm, Hähnchen und Kebab vom Holzkohlegrill, frisches Brot aus dem Tanoor-Ofen und arabische Vorspeisen. Herzlich willkommen!</p>
-        <div class="hero-actions">
-          <a href="#reserve" class="btn btn-primary" data-i18n="hero.cta">Tisch reservieren</a>
-          <a href="#menu" class="btn btn-ghost" data-i18n="hero.menu">Zur Speisekarte</a>
-        </div>
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/hero.webp" alt="" fetchpriority="high">
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-circle">
-          <span class="hero-word" data-i18n="hero.word">Balad</span>
+      <canvas class="hero__embers" aria-hidden="true"></canvas>
+      <span class="hero__watermark" aria-hidden="true">البلد</span>
+
+      <div class="hero__content container">
+        <p class="overline overline--lines" data-reveal data-i18n="hero.over">Holzkohlegrill · Arabische Küche</p>
+        <h1 class="hero__title" data-reveal data-i18n-html="hero.title">Die Kunst<br><em>der Glut</em></h1>
+        <p class="hero__lead" data-reveal data-i18n="hero.lead">Lamm, Hähnchen und Kebab über echter Holzkohle gegrillt. Dazu Brot, frisch aus dem Tanoor-Ofen.</p>
+        <div class="hero__actions" data-reveal>
+          <a href="#menu" class="btn btn--gold btn--lg">
+            <span data-i18n="hero.cta">Jetzt bestellen</span><svg class="btn__arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#signature" class="btn btn--ghost btn--lg" data-i18n="hero.menu">Speisekarte entdecken</a>
         </div>
+        <ul class="hero__features" data-reveal>
+          <li><svg><use href="#i-flame"/></svg><span data-i18n="hero.f1">Echter Holzkohlegrill</span></li>
+          <li><svg><use href="#i-bread"/></svg><span data-i18n="hero.f2">Tanoor-Brot, hausgemacht</span></li>
+          <li><svg><use href="#i-whatsapp"/></svg><span data-i18n="hero.f3">Bestellung per WhatsApp</span></li>
+        </ul>
       </div>
-      <a href="#about" class="scroll-hint" data-i18n-attr="aria-label:scroll">↓</a>
+
+      <a href="#signature" class="hero__scroll" aria-hidden="true" tabindex="-1">
+        <span data-i18n="hero.scroll">Entdecken</span>
+        <i></i>
+      </a>
     </section>
 
-    <section class="section" id="menu">
-      <header class="section-head">
-        <p class="eyebrow" data-i18n="menu.eyebrow">Aus unserer Küche</p>
-        <h2 data-i18n="menu.title">Speisekarte</h2>
-        <p class="section-sub" data-i18n="menu.sub">Preise in Euro (€). Eine Auswahl, die vollständige Karte gibt es im Restaurant.</p>
-      </header>
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee></div>
+    </div>
 
-      <div class="menu-tabs" role="tablist" data-i18n-attr="aria-label:menu.tabsLabel"></div>
-      <div class="menu-grid"></div>
+    <!-- Signature dishes -->
+    <section class="section signature" id="signature">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="overline" data-i18n="sig.over">Aus dem Feuer</p>
+          <h2 class="section-title" data-i18n="sig.title">Unsere Spezialitäten</h2>
+          <svg class="ornament"><use href="#i-ornament"/></svg>
+          <p class="section-lead" data-i18n="sig.lead">Die Gerichte, für die unsere Gäste wiederkommen.</p>
+        </header>
+        <div class="signature__grid" data-signature></div>
+      </div>
     </section>
 
-    <section class="section section-alt" id="about">
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="eyebrow" data-i18n="about.eyebrow">Unsere Küche</p>
-          <h2 data-i18n="about.title">Holzkohle, Brot und Gastfreundschaft</h2>
-          <p data-i18n="about.p1">Bei uns steht der Grill im Mittelpunkt. Lamm, Hähnchen und Gemüse garen über echter Holzkohle, und unser Brot kommt frisch aus dem Tanoor-Ofen.</p>
-          <p data-i18n="about.p2">Wir laden alle ein, die arabische Küche lieben: ob zum ersten Mal oder seit Jahren. Setzen Sie sich zu uns, wir kümmern uns um den Rest.</p>
-          <ul class="values">
-            <li data-i18n-html="about.v1"><strong>Holzkohlegrill</strong> für Fleisch und Gemüse</li>
-            <li data-i18n-html="about.v2"><strong>Brot aus dem Tanoor-Ofen</strong>, hausgemacht</li>
-            <li data-i18n-html="about.v3"><strong>Herzliche Gastfreundschaft</strong> vom ersten Moment an</li>
+    <!-- Menu -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="overline" data-i18n="menu.over">Speisekarte</p>
+          <h2 class="section-title" data-i18n="menu.title">Frisch für Sie zubereitet</h2>
+          <svg class="ornament"><use href="#i-ornament"/></svg>
+          <p class="section-lead" data-i18n="menu.lead">Wählen Sie Ihre Lieblingsgerichte, legen Sie sie in den Warenkorb und senden Sie Ihre Bestellung bequem per WhatsApp.</p>
+        </header>
+      </div>
+
+      <div class="menu__bar">
+        <div class="container menu__bar-inner">
+          <div class="menu__cats" data-cats role="tablist"></div>
+          <label class="search">
+            <svg><use href="#i-search"/></svg>
+            <input type="search" data-search data-i18n-attr="placeholder:menu.search;aria-label:menu.search">
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="menu__list" data-menu></div>
+        <p class="menu__empty" data-menu-empty hidden data-i18n="menu.empty">Kein Gericht gefunden.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media" data-reveal>
+          <figure class="about__img about__img--main"><img src="assets/img/skewers-smoke.webp" alt="" loading="lazy"></figure>
+          <figure class="about__img about__img--small"><img src="assets/img/interior.webp" alt="" loading="lazy"></figure>
+          <div class="about__badge">
+            <svg><use href="#i-logo"/></svg>
+          </div>
+        </div>
+        <div class="about__text" data-reveal>
+          <p class="overline" data-i18n="about.over">Unsere Küche</p>
+          <h2 class="section-title" data-i18n-html="about.title">Ehrliches Feuer.<br><em>Echter Geschmack.</em></h2>
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <ul class="about__features">
+            <li><span class="about__icon"><svg><use href="#i-flame"/></svg></span><div><strong data-i18n="about.f1.t"></strong><span data-i18n="about.f1.d"></span></div></li>
+            <li><span class="about__icon"><svg><use href="#i-bread"/></svg></span><div><strong data-i18n="about.f2.t"></strong><span data-i18n="about.f2.d"></span></div></li>
+            <li><span class="about__icon"><svg><use href="#i-heart"/></svg></span><div><strong data-i18n="about.f3.t"></strong><span data-i18n="about.f3.d"></span></div></li>
           </ul>
-        </div>
-        <div class="about-card">
-          <div class="stat">
-            <span class="stat-num" data-i18n="about.s1.num">Holzkohle</span>
-            <span class="stat-label" data-i18n="about.s1.label">Grill über echter Glut</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num" data-i18n="about.s2.num">Tanoor</span>
-            <span class="stat-label" data-i18n="about.s2.label">Brot frisch aus dem Ofen</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num" data-i18n="about.s3.num">Draußen</span>
-            <span class="stat-label" data-i18n="about.s3.label">Sitzplätze an der Straße</span>
-          </div>
+          <p class="about__sign" data-i18n="about.sign">أهلاً وسهلاً</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="gallery">
-      <header class="section-head">
-        <p class="eyebrow" data-i18n="gallery.eyebrow">Momente bei uns</p>
-        <h2 data-i18n="gallery.title">Impressionen</h2>
-      </header>
-      <div class="gallery">
-        <div class="tile tile-a"><span data-i18n="gallery.a">Glut &amp; Feuer</span></div>
-        <div class="tile tile-b"><span data-i18n="gallery.b">Gemütlich essen</span></div>
-        <div class="tile tile-c"><span data-i18n="gallery.c">Wand der Städte</span></div>
-        <div class="tile tile-d"><span data-i18n="gallery.d">Abendstimmung</span></div>
+    <!-- How to order -->
+    <section class="section steps" id="order">
+      <div class="steps__bg" aria-hidden="true"><img src="assets/img/doner.webp" alt="" loading="lazy"></div>
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="overline" data-i18n="steps.over">So einfach geht's</p>
+          <h2 class="section-title" data-i18n="steps.title">In drei Schritten bestellt</h2>
+          <svg class="ornament"><use href="#i-ornament"/></svg>
+        </header>
+        <ol class="steps__list">
+          <li class="step" data-reveal>
+            <span class="step__num">01</span>
+            <span class="step__icon"><svg><use href="#i-search"/></svg></span>
+            <h3 data-i18n="steps.s1.t"></h3>
+            <p data-i18n="steps.s1.d"></p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">02</span>
+            <span class="step__icon"><svg><use href="#i-bag"/></svg></span>
+            <h3 data-i18n="steps.s2.t"></h3>
+            <p data-i18n="steps.s2.d"></p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">03</span>
+            <span class="step__icon"><svg><use href="#i-whatsapp"/></svg></span>
+            <h3 data-i18n="steps.s3.t"></h3>
+            <p data-i18n="steps.s3.d"></p>
+          </li>
+        </ol>
+        <div class="steps__cta" data-reveal>
+          <a href="#menu" class="btn btn--gold btn--lg"><span data-i18n="steps.cta">Zur Speisekarte</span><svg class="btn__arrow"><use href="#i-arrow"/></svg></a>
+        </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="visit">
-      <header class="section-head">
-        <p class="eyebrow" data-i18n="visit.eyebrow">Besuchen Sie uns</p>
-        <h2 data-i18n="visit.title">Besuch &amp; Öffnungszeiten</h2>
-      </header>
-      <div class="visit-grid">
-        <div class="info-card">
-          <h3 data-i18n="visit.hoursTitle">Öffnungszeiten</h3>
-          <ul class="hours">
-            <li><span data-i18n="visit.hours1.days">Montag – Sonntag</span><span data-i18n="visit.hours1.time">[Zeiten eintragen]</span></li>
-          </ul>
-          <h3 data-i18n="visit.contactTitle">Kontakt</h3>
-          <p><a href="tel:+490000000000" dir="ltr" data-i18n="visit.phone">+49 [Telefonnummer]</a></p>
-          <p><span data-i18n="visit.addressLabel">Adresse:</span> <span data-i18n="visit.address">[Adresse eintragen]</span></p>
-        </div>
-        <div class="map-box" role="img" data-i18n-attr="aria-label:visit.mapLabel">
-          <span data-i18n="visit.map">[Google-Maps-Link hier einfügen]</span>
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="overline" data-i18n="gallery.over">Impressionen</p>
+          <h2 class="section-title" data-i18n="gallery.title">Ein Abend bei uns</h2>
+          <svg class="ornament"><use href="#i-ornament"/></svg>
+        </header>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall" data-reveal><img src="assets/img/chicken-grill.webp" alt="" loading="lazy"><figcaption data-i18n="gallery.c1"></figcaption></figure>
+          <figure class="gallery__item gallery__item--wide" data-reveal><img src="assets/img/grill-mix.webp" alt="" loading="lazy"><figcaption data-i18n="gallery.c2"></figcaption></figure>
+          <figure class="gallery__item gallery__item--tall" data-reveal><img src="assets/img/interior-bar.webp" alt="" loading="lazy"><figcaption data-i18n="gallery.c3"></figcaption></figure>
+          <figure class="gallery__item" data-reveal><img src="assets/img/shawarma-wrap.webp" alt="" loading="lazy"><figcaption data-i18n="gallery.c4"></figcaption></figure>
+          <figure class="gallery__item" data-reveal><img src="assets/img/baklava.webp" alt="" loading="lazy"><figcaption data-i18n="gallery.c5"></figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="section" id="reserve">
-      <div class="reserve-wrap">
-        <div class="reserve-intro">
-          <p class="eyebrow" data-i18n="reserve.eyebrow">Reservierung</p>
-          <h2 data-i18n="reserve.title">Tisch reservieren</h2>
-          <p data-i18n="reserve.sub">Füllen Sie das Formular aus. Wir bestätigen Ihre Reservierung telefonisch.</p>
-        </div>
+    <!-- Visit -->
+    <section class="section visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__card" data-reveal>
+          <p class="overline" data-i18n="visit.over">Besuchen Sie uns</p>
+          <h2 class="section-title" data-i18n="visit.title">Wir freuen uns auf Sie</h2>
 
-        <form class="reserve-form" id="reserve-form" novalidate>
-          <div class="field">
-            <label for="name" data-i18n="form.name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="phone" data-i18n="form.phone">Telefon</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" dir="ltr" required>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="date" data-i18n="form.date">Datum</label>
-              <input id="date" name="date" type="date" required>
-            </div>
-            <div class="field">
-              <label for="time" data-i18n="form.time">Uhrzeit</label>
-              <input id="time" name="time" type="time" required>
+          <div class="visit__row">
+            <span class="visit__icon"><svg><use href="#i-clock"/></svg></span>
+            <div>
+              <h3 data-i18n="visit.hours">Öffnungszeiten</h3>
+              <p class="visit__hours"><span data-i18n="visit.days1"></span><span data-i18n="visit.time1"></span></p>
             </div>
           </div>
-          <div class="field">
-            <label for="guests" data-i18n="form.guests">Personen</label>
-            <select id="guests" name="guests">
-              <option>2</option><option>3</option><option>4</option>
-              <option>5</option><option>6</option><option>8+</option>
-            </select>
+          <div class="visit__row">
+            <span class="visit__icon"><svg><use href="#i-pin"/></svg></span>
+            <div>
+              <h3 data-i18n="visit.address">Adresse</h3>
+              <p data-address></p>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Reservierung bestätigen</button>
-          <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
-        </form>
+          <div class="visit__row">
+            <span class="visit__icon"><svg><use href="#i-phone"/></svg></span>
+            <div>
+              <h3 data-i18n="visit.phone">Telefon</h3>
+              <p><a data-phone dir="ltr"></a></p>
+            </div>
+          </div>
+
+          <div class="visit__actions">
+            <a href="#" class="btn btn--whatsapp" data-whatsapp-link><svg><use href="#i-whatsapp"/></svg><span data-i18n="visit.whatsapp"></span></a>
+            <a href="#" class="btn btn--ghost" data-i18n="visit.route">Route planen</a>
+          </div>
+        </div>
+
+        <div class="visit__map" data-reveal>
+          <div class="map-art" aria-hidden="true">
+            <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+              <g fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M-20 80 C 80 60, 160 120, 420 90"/>
+                <path d="M-20 210 C 120 190, 220 250, 420 220" stroke-width="2.2"/>
+                <path d="M-20 330 C 90 320, 250 350, 420 310"/>
+                <path d="M70 -20 C 60 100, 110 250, 90 420"/>
+                <path d="M210 -20 C 230 120, 190 260, 220 420" stroke-width="2.2"/>
+                <path d="M330 -20 C 320 140, 350 280, 320 420"/>
+                <path d="M-20 140 L 420 170" opacity=".5"/>
+                <path d="M140 -20 L 160 420" opacity=".5"/>
+                <path d="M270 -20 L 290 420" opacity=".5"/>
+              </g>
+            </svg>
+            <span class="map-art__pin"><svg><use href="#i-logo"/></svg></span>
+          </div>
+          <p class="visit__map-note" data-i18n="visit.map">Karte wird nach Freigabe eingebunden</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <span class="brand-mark" data-i18n="brand.mark">G</span>
-      <span>Grill Al Balad</span>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="logo" aria-label="Grill Al Balad">
+          <svg class="logo__mark"><use href="#i-logo"/></svg>
+          <span class="logo__text">
+            <span class="logo__name">Grill Al Balad</span>
+            <span class="logo__sub" data-i18n="brand.sub">Holzkohlegrill</span>
+          </span>
+        </a>
+        <p data-i18n="footer.tag"></p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.nav">Navigation</h3>
+        <ul class="footer__links">
+          <li><a href="#menu" data-i18n="nav.menu"></a></li>
+          <li><a href="#about" data-i18n="nav.about"></a></li>
+          <li><a href="#order" data-i18n="nav.order"></a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.contact">Kontakt</h3>
+        <ul class="footer__links">
+          <li data-address></li>
+          <li><a data-phone dir="ltr"></a></li>
+          <li><a href="#" data-whatsapp-link>WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.follow">Folgen Sie uns</h3>
+        <div class="footer__social">
+          <a href="#" class="icon-btn" data-social="instagram" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a href="#" class="icon-btn" data-social="facebook" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+          <a href="#" class="icon-btn" data-social="tiktok" aria-label="TikTok"><svg><use href="#i-tiktok"/></svg></a>
+        </div>
+      </div>
     </div>
-    <p data-i18n="footer.tag">Holzkohle, Gewürz &amp; Heimat.</p>
-    <p class="copy">© <span id="year"></span> Grill Al Balad. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+    <div class="container footer__bottom">
+      <p>© <span data-year></span> Grill Al Balad. <span data-i18n="footer.rights"></span></p>
+      <p class="footer__legal">
+        <a href="#" data-i18n="footer.imprint">Impressum</a>
+        <a href="#" data-i18n="footer.privacy">Datenschutz</a>
+        <span data-i18n="footer.photos"></span>
+      </p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Floating cart bar (mobile) -->
+  <button type="button" class="cart-bar" data-open-cart data-cart-bar hidden>
+    <span class="cart-bar__count" data-cart-count>0</span>
+    <span class="cart-bar__label" data-i18n="cart.view">Warenkorb ansehen</span>
+    <span class="cart-bar__total" data-cart-total></span>
+  </button>
+
+  <!-- Cart drawer -->
+  <div class="overlay" data-overlay hidden></div>
+  <aside class="drawer" data-drawer aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <header class="drawer__head">
+      <div>
+        <p class="overline">Grill Al Balad</p>
+        <h2 id="cart-title" data-i18n="cart.title">Ihre Bestellung</h2>
+      </div>
+      <button type="button" class="icon-btn" data-close-cart data-i18n-attr="aria-label:cart.close"><svg><use href="#i-close"/></svg></button>
+    </header>
+
+    <div class="drawer__body">
+      <div class="drawer__empty" data-cart-empty>
+        <span class="drawer__empty-icon"><svg><use href="#i-bag"/></svg></span>
+        <h3 data-i18n="cart.empty.t"></h3>
+        <p data-i18n="cart.empty.d"></p>
+        <a href="#menu" class="btn btn--ghost" data-close-cart data-i18n="cart.empty.cta"></a>
+      </div>
+
+      <ul class="drawer__items" data-cart-items></ul>
+
+      <div class="drawer__form" data-cart-form>
+        <fieldset class="field">
+          <legend data-i18n="cart.type"></legend>
+          <div class="segmented">
+            <label><input type="radio" name="type" value="pickup" checked><span data-i18n="cart.pickup"></span></label>
+            <label><input type="radio" name="type" value="dinein"><span data-i18n="cart.dinein"></span></label>
+          </div>
+        </fieldset>
+        <label class="field">
+          <span data-i18n="cart.name"></span>
+          <input type="text" name="name" autocomplete="name" data-i18n-attr="placeholder:cart.namePh">
+        </label>
+        <label class="field">
+          <span data-i18n="cart.note"></span>
+          <textarea name="note" rows="2" data-i18n-attr="placeholder:cart.notePh"></textarea>
+        </label>
+      </div>
+    </div>
+
+    <footer class="drawer__foot" data-cart-foot>
+      <div class="drawer__total">
+        <span data-i18n="cart.total"></span>
+        <strong data-cart-total></strong>
+      </div>
+      <button type="button" class="btn btn--whatsapp btn--block btn--lg" data-send-order>
+        <svg><use href="#i-whatsapp"/></svg><span data-i18n="cart.send"></span>
+      </button>
+      <p class="drawer__hint" data-i18n="cart.hint"></p>
+    </footer>
+  </aside>
+
+  <!-- Dish modal -->
+  <div class="modal" data-modal hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button type="button" class="icon-btn modal__close" data-close-modal data-i18n-attr="aria-label:menu.close"><svg><use href="#i-close"/></svg></button>
+      <div class="modal__media" data-modal-media></div>
+      <div class="modal__body">
+        <p class="overline" data-modal-cat></p>
+        <h2 id="modal-title" data-modal-title></h2>
+        <div class="modal__tags" data-modal-tags></div>
+        <p class="modal__desc" data-modal-desc></p>
+        <p class="modal__note" data-modal-note></p>
+        <div class="modal__actions">
+          <div class="stepper stepper--lg">
+            <button type="button" data-modal-dec data-i18n-attr="aria-label:cart.decrease"><svg><use href="#i-minus"/></svg></button>
+            <span data-modal-qty>1</span>
+            <button type="button" data-modal-inc data-i18n-attr="aria-label:cart.increase"><svg><use href="#i-plus"/></svg></button>
+          </div>
+          <button type="button" class="btn btn--gold btn--lg modal__add" data-modal-add>
+            <span data-i18n="menu.addTo"></span><span class="modal__add-price" data-modal-price></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" data-toast role="status" aria-live="polite"><svg><use href="#i-check"/></svg><span data-toast-text></span></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
