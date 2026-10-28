@@ -8,14 +8,8 @@ durch echte Fotos des Restaurants ersetzt werden.
 
 | Datei | Unsplash-Foto-ID |
 | --- | --- |
-| hero.webp | photo-1508615263227-c5d58c1e5821 |
-| grill-mix.webp | photo-1555939594-58d7cb561ad1 |
 | lamb-skewers.webp | photo-1603360946369-dc9bb6258143 |
-| skewers-smoke.webp | photo-1529563021893-cc83c992d75d |
-| chicken-grill.webp | photo-1561626423-a51b45aef0a1 |
-| tawouk.webp | photo-1628294895950-9805252327bc |
 | lamb-chop.webp | photo-1615937657715-bc7b4b7962c1 |
-| roast-chicken.webp | photo-1606728035253-49e8a23146de |
 | fish.webp | photo-1611599537845-1c7aca0091c0 |
 | shawarma-wrap.webp | photo-1633321702518-7feccafb94d5 |
 | durum.webp | photo-1626700051175-6818013e1d4f |
@@ -27,6 +21,13 @@ durch echte Fotos des Restaurants ersetzt werden.
 | house-plate.webp | photo-1561651823-34feb02250e4 |
 | burger.webp | photo-1594212699903-ec8a3eca50f5 |
 | baklava.webp | photo-1598110750624-207050c4f28c |
-| interior-bar.webp | photo-1514933651103-005eec06c04b |
 
 Bild-URL: `https://images.unsplash.com/<Foto-ID>`
+
+## Eigene Fotos des Restaurants / صور المطعم
+
+Vom Auftraggeber bereitgestellt (vom Benutzer geschickt):
+
+hero-tawouk.webp, tawouk-plate.webp, mix-grill.webp, half-chicken.webp,
+lamb-pieces.webp, grill-platter.webp, grill-coals.webp, grill-wide.webp,
+platter-board.webp (die letzten drei aus dem Werbeplakat zugeschnitten, ohne Schrift)
